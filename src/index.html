@@ -5,8 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Title</title>
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-  <h1>Hello world</h1>
+  <div class="grid-container">
+    <button class="menu-toggle">
+      <svg width="12" viewbox="0 0 12 10" fill="#ffffff">
+        <rect width="100%" height="2" x="0" y="0"></rect>
+        <rect width="100%" height="2" x="0" y="4"></rect>
+        <rect width="100%" height="2" x="0" y="8"></rect>
+      </svg>
+      Open menu
+    </button>
+
+    <header class="header">
+      <section class="header__search">Search...</section>
+      <section class="header__avatar">Your face</section>
+    </header>
+
+    <aside class="sidebar">
+      <button class="sidebar__close-button">
+        <img src="./img/close.svg" alt="Close menu">
+        Close menu
+      </button>
+      <nav class="sidebar__nav">
+        <ul class="sidebar__list">
+          <li class="sidebar__item">Item One</li>
+          <li class="sidebar__item">Item Two</li>
+          <li class="sidebar__item">Item Three</li>
+          <li class="sidebar__item">Item Four</li>
+          <li class="sidebar__item">Item Five</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="content__header">
+        <p class="content__heading">Hello, User</p>
+        <section class="content__updates">Recent Items</section>
+      </header>
+
+      <ul class="content__overview-list">
+        <li class="content__overview-card">
+          <div class="overview__card-icon">Overview</div>
+          <p class="overview__card-info">Card</p>
+        </li>
+        <li class="content__overview-card">
+          <div class="overview__card-icon">Overview</div>
+          <p class="overview__card-info">Card</p>
+        </li>
+        <li class="content__overview-card">
+          <div class="overview__card-icon">Overview</div>
+          <p class="overview__card-info">Card</p>
+        </li>
+        <li class="content__overview-card">
+          <div class="overview__card-icon">Overview</div>
+          <p class="overview__card-info">Card</p>
+        </li>
+      </ul>
+
+      <ul class="content__main-cards">
+        <li class="content__main-card">Card</li>
+        <li class="content__main-card">Card</li>
+        <li class="content__main-card">Card</li>
+      </ul>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2019 MTH</p>
+      <p class="footer__signature">Made by <a href="#" class="footer__signature-link">Mirangs</a></p>
+    </footer>
+  </div>
+
+  <script src="./js/index.js"></script>
 </body>
 </html>

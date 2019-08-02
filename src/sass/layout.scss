@@ -1,0 +1,37 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+
+  min-height: 100vh;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+@media only screen and (min-width: 46.875em) {
+  .grid-container {
+    grid-template-columns: 240px 1fr;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar content"
+    "sidebar footer";
+  }
+}

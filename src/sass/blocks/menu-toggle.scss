@@ -1,0 +1,22 @@
+.menu-toggle {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 0;
+
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  cursor: pointer;
+
+  border-radius: 50%;
+  background-color: $menu-toggle-bg-color;
+}
